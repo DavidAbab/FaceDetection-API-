@@ -34,9 +34,9 @@ const handleApiCall = (req, res) => {
     .catch((err) => res.status(400).json("Problème avec l api"));
 };
 
-// app.get("/", (req, res) => {
-//   res.send(database.users);
-// });
+app.get("/", (req, res) => {
+  res.send("ça foncitonne");
+});
 
 app.post("/signin", (req, res) => {
   const { email, password } = req.body;
