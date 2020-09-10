@@ -35,7 +35,7 @@ const handleApiCall = (req, res) => {
 };
 
 app.get("/", (req, res) => {
-  res.send("ça foncitonne");
+  res.send("ça fonctionne :)");
 });
 
 app.post("/signin", (req, res) => {
