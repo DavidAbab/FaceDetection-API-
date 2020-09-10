@@ -7,10 +7,8 @@ const Clarifai = require("clarifai");
 const db = knex({
   client: "pg",
   connection: {
-    host: "127.0.0.1",
-    user: "postgres",
-    password: "test",
-    database: "facedetection",
+    host: process.env.DATABASE_URL,
+    ssl: true,
   },
 });
 
